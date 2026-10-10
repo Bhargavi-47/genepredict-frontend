@@ -60,7 +60,7 @@ export default function DashboardPage() {
       </div>
 
       <div className="mt-8 grid gap-6 lg:grid-cols-2">
-        <div className="rounded-xl border border-surface-border bg-surface p-6">
+        <div className="rounded-md border border-surface-border bg-surface p-6">
           <h2 className="mb-4 font-display text-base font-semibold text-navy-dark">
             Pipeline totals
           </h2>
@@ -98,7 +98,7 @@ export default function DashboardPage() {
           />
         </div>
 
-        <div className="rounded-xl border border-surface-border bg-surface p-6">
+        <div className="rounded-md border border-surface-border bg-surface p-6">
           <h2 className="mb-4 font-display text-base font-semibold text-navy-dark">
             Patients by gender
           </h2>

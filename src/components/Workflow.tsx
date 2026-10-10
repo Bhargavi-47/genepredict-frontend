@@ -13,10 +13,8 @@ export default function Workflow() {
   return (
     <section id="workflow" className="bg-navy-dark py-20">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="mb-14 max-w-xl">
-          <p className="mb-2 font-mono text-xs uppercase tracking-widest text-teal-light">
-            Pipeline
-          </p>
+        <div className="mb-14 max-w-xl border-l-2 border-teal pl-4">
+          <p className="mb-1 font-mono text-xs text-teal-light">Pipeline</p>
           <h2 className="font-display text-3xl font-semibold text-white">
             One sample, six stages, one report
           </h2>

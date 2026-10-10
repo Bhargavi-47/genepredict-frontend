@@ -33,50 +33,50 @@ export default function Sidebar() {
   const { logout, user } = useAuth();
 
   return (
-    <aside className="flex h-screen w-64 flex-col border-r border-surface-border bg-surface">
-      <div className="flex items-center gap-2 px-6 py-5">
+    <aside className="flex h-screen w-64 flex-col border-r border-navy-dark/40 bg-navy-dark">
+      <div className="flex items-center gap-2 border-b border-white/10 px-6 py-5">
         <span className="h-2.5 w-2.5 rounded-sm bg-accent-green" />
-        <span className="font-display text-base font-semibold text-navy-dark">
-          GenePredict <span className="text-teal">AI</span>
+        <span className="font-display text-base font-semibold text-white">
+          GenePredict <span className="text-teal-light">AI</span>
         </span>
       </div>
 
-      <nav className="flex-1 space-y-1 overflow-y-auto px-3 py-4">
+      <nav className="flex-1 space-y-0.5 overflow-y-auto px-3 py-4">
         {navItems.map((item) => {
           const active = pathname === item.href;
           return (
             <Link
               key={item.href}
               href={item.href}
-              className={`flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium transition ${
+              className={`flex items-center gap-3 rounded-sm border-l-2 px-3 py-2.5 text-sm font-medium transition ${
                 active
-                  ? "bg-navy/10 text-navy-dark"
-                  : "text-ink-secondary hover:bg-surface-muted"
+                  ? "border-teal-light bg-white/5 text-white"
+                  : "border-transparent text-white/60 hover:bg-white/5 hover:text-white/90"
               }`}
             >
-              <item.icon className="text-lg" />
+              <item.icon className="text-base" />
               {item.label}
             </Link>
           );
         })}
       </nav>
 
-      <div className="border-t border-surface-border px-3 py-4">
+      <div className="border-t border-white/10 px-3 py-4">
         {user && (
           <div className="mb-3 px-3">
-            <p className="truncate text-sm font-medium text-navy-dark">
+            <p className="truncate text-sm font-medium text-white">
               {user.full_name}
             </p>
-            <p className="truncate text-xs capitalize text-ink-faint">
+            <p className="truncate font-mono text-xs capitalize text-white/50">
               {user.role}
             </p>
           </div>
         )}
         <button
           onClick={logout}
-          className="flex w-full items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-ink-secondary transition hover:bg-surface-muted"
+          className="flex w-full items-center gap-3 rounded-sm px-3 py-2.5 text-sm font-medium text-white/60 transition hover:bg-white/5 hover:text-white/90"
         >
-          <HiOutlineLogout className="text-lg" />
+          <HiOutlineLogout className="text-base" />
           Logout
         </button>
       </div>

@@ -64,7 +64,7 @@ export default function PredictionPage() {
 
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="mt-6 grid max-w-2xl gap-4 rounded-xl border border-surface-border bg-surface p-6 sm:grid-cols-2"
+        className="mt-6 grid max-w-2xl gap-4 rounded-md border border-surface-border bg-surface p-6 sm:grid-cols-2"
       >
         <div className="sm:col-span-2">
           <label className="mb-1.5 block text-sm font-medium text-navy-dark">
@@ -123,7 +123,7 @@ export default function PredictionPage() {
       )}
 
       {result && (
-        <div className="mt-6 max-w-2xl rounded-xl border border-surface-border bg-surface p-6">
+        <div className="mt-6 max-w-2xl rounded-md border border-surface-border bg-surface p-6">
           <div className="mb-4 flex items-center justify-between">
             <h2 className="font-display text-lg font-semibold text-navy-dark">
               {result.disease}

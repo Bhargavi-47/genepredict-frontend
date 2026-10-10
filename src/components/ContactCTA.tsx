@@ -6,21 +6,26 @@ import MutationTrack from "./MutationTrack";
 export default function ContactCTA() {
   return (
     <section id="contact" className="mx-auto max-w-6xl px-6 py-20">
-      <div className="overflow-hidden rounded-2xl bg-teal px-8 py-12 text-center md:px-16">
-        <h2 className="font-display text-3xl font-semibold text-white">
-          Bring your own mutation data
-        </h2>
-        <p className="mx-auto mt-3 max-w-md text-sm text-white/85">
-          Create an account and upload your first dataset in minutes. No
-          credit card required to explore the platform.
-        </p>
-        <Link
-          href="/signup"
-          className="mt-8 inline-block rounded-md bg-navy-dark px-6 py-3 text-sm font-semibold text-white transition hover:bg-navy"
-        >
-          Create your account
-        </Link>
-        <div className="mx-auto mt-10 max-w-md opacity-90">
+      <div className="grid items-center gap-10 rounded-md border border-surface-border bg-surface-muted px-8 py-10 md:grid-cols-2 md:px-12">
+        <div>
+          <p className="mb-1 border-l-2 border-teal pl-3 font-mono text-xs text-teal-dark">
+            Get started
+          </p>
+          <h2 className="font-display text-2xl font-semibold text-navy-dark md:text-3xl">
+            Bring your own mutation data
+          </h2>
+          <p className="mt-3 max-w-md text-sm text-ink-secondary">
+            Create an account and upload your first dataset in minutes. No
+            credit card required to explore the platform.
+          </p>
+          <Link
+            href="/signup"
+            className="mt-6 inline-block rounded-md bg-navy px-6 py-3 text-sm font-semibold text-white transition hover:bg-navy-dark"
+          >
+            Create your account
+          </Link>
+        </div>
+        <div className="opacity-90">
           <MutationTrack segments={40} highlightIndex={-1} animated={false} />
         </div>
       </div>

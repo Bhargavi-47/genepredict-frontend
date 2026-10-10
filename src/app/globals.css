@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --font-display: "Space Grotesk", sans-serif;
+  --font-display: "Archivo", sans-serif;
   --font-body: "IBM Plex Sans", sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
 }
@@ -21,6 +21,17 @@ body {
 *:focus-visible {
   outline: 2px solid theme("colors.teal.DEFAULT");
   outline-offset: 2px;
+}
+
+/* Clinical panel: hairline border, no shadow, precise corners —
+   replaces the soft-shadow rounded-card pattern site-wide. */
+.panel {
+  @apply bg-surface border border-surface-border rounded-md;
+}
+
+/* Small caption/meta text used instead of ALL-CAPS eyebrows. */
+.field-label {
+  @apply text-xs font-medium text-ink-faint;
 }
 
 @media (prefers-reduced-motion: reduce) {

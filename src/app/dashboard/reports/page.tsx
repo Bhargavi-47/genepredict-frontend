@@ -85,7 +85,7 @@ export default function ReportsPage() {
       {showForm && (
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="mt-6 max-w-xl space-y-4 rounded-xl border border-surface-border bg-surface p-6"
+          className="mt-6 max-w-xl space-y-4 rounded-md border border-surface-border bg-surface p-6"
         >
           <div>
             <label className="mb-1.5 block text-sm font-medium text-navy-dark">
@@ -158,7 +158,7 @@ export default function ReportsPage() {
           <p className="text-sm text-ink-secondary">No reports created yet.</p>
         )}
         {reports.map((r) => (
-          <div key={r.id} className="rounded-xl border border-surface-border bg-surface p-5">
+          <div key={r.id} className="rounded-md border border-surface-border bg-surface p-5">
             <p className="font-mono text-xs text-ink-faint">
               Report #{r.id.slice(0, 8)}
             </p>

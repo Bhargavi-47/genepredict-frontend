@@ -103,7 +103,7 @@ export default function UploadDatasetPage() {
           setDragging(false);
           if (e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]);
         }}
-        className={`mt-6 flex max-w-xl flex-col items-center justify-center rounded-xl border-2 border-dashed p-12 text-center transition ${
+        className={`mt-6 flex max-w-xl flex-col items-center justify-center rounded-md border-2 border-dashed p-12 text-center transition ${
           dragging ? "border-teal bg-teal/5" : "border-surface-border bg-surface"
         }`}
       >
@@ -144,7 +144,7 @@ export default function UploadDatasetPage() {
       )}
 
       {preview.length > 0 && (
-        <div className="mt-6 max-w-xl rounded-xl border border-surface-border bg-surface p-5">
+        <div className="mt-6 max-w-xl rounded-md border border-surface-border bg-surface p-5">
           <h2 className="mb-3 font-display text-sm font-semibold text-navy-dark">
             Preview (first 10 lines)
           </h2>
@@ -158,7 +158,7 @@ export default function UploadDatasetPage() {
         <h2 className="mb-3 font-display text-base font-semibold text-navy-dark">
           Upload history
         </h2>
-        <div className="overflow-hidden rounded-xl border border-surface-border bg-surface">
+        <div className="overflow-hidden rounded-md border border-surface-border bg-surface">
           <table className="w-full text-left text-sm">
             <thead className="border-b border-surface-border bg-surface-muted text-xs uppercase tracking-wide text-ink-faint">
               <tr>

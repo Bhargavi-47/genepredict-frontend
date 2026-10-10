@@ -93,7 +93,7 @@ export default function PatientsPage() {
       {showForm && (
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="mt-6 grid gap-4 rounded-xl border border-surface-border bg-surface p-6 sm:grid-cols-2 lg:grid-cols-4"
+          className="mt-6 grid gap-4 rounded-md border border-surface-border bg-surface p-6 sm:grid-cols-2 lg:grid-cols-4"
         >
           <input
             placeholder="Patient name"
@@ -140,7 +140,7 @@ export default function PatientsPage() {
         </div>
       )}
 
-      <div className="mt-6 overflow-hidden rounded-xl border border-surface-border bg-surface">
+      <div className="mt-6 overflow-hidden rounded-md border border-surface-border bg-surface">
         <table className="w-full text-left text-sm">
           <thead className="border-b border-surface-border bg-surface-muted text-xs uppercase tracking-wide text-ink-faint">
             <tr>

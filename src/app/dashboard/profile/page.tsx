@@ -52,7 +52,7 @@ export default function ProfilePage() {
 
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="mt-6 max-w-lg space-y-4 rounded-xl border border-surface-border bg-surface p-6"
+        className="mt-6 max-w-lg space-y-4 rounded-md border border-surface-border bg-surface p-6"
       >
         <div>
           <label className="mb-1.5 block text-sm font-medium text-navy-dark">

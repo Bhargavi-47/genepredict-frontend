@@ -18,7 +18,7 @@ export default function SettingsPage() {
       </p>
 
       <div className="mt-6 max-w-lg space-y-4">
-        <div className="rounded-xl border border-surface-border bg-surface p-5">
+        <div className="rounded-md border border-surface-border bg-surface p-5">
           <h2 className="mb-4 font-display text-sm font-semibold text-navy-dark">
             Notifications
           </h2>
@@ -40,7 +40,7 @@ export default function SettingsPage() {
           </p>
         </div>
 
-        <div className="rounded-xl border border-surface-border bg-surface p-5">
+        <div className="rounded-md border border-surface-border bg-surface p-5">
           <h2 className="mb-2 font-display text-sm font-semibold text-navy-dark">
             Account
           </h2>

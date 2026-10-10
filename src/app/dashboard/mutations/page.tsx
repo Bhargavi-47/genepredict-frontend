@@ -109,7 +109,7 @@ export default function MutationAnalysisPage() {
       {showForm && (
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="mt-6 grid max-w-3xl gap-4 rounded-xl border border-surface-border bg-surface p-6 sm:grid-cols-2 lg:grid-cols-3"
+          className="mt-6 grid max-w-3xl gap-4 rounded-md border border-surface-border bg-surface p-6 sm:grid-cols-2 lg:grid-cols-3"
         >
           <input
             placeholder="Gene name (e.g. BRCA1)"
@@ -156,7 +156,7 @@ export default function MutationAnalysisPage() {
         </div>
       )}
 
-      <div className="mt-6 max-w-3xl overflow-hidden rounded-xl border border-surface-border bg-surface">
+      <div className="mt-6 max-w-3xl overflow-hidden rounded-md border border-surface-border bg-surface">
         <table className="w-full text-left text-sm">
           <thead className="border-b border-surface-border bg-surface-muted text-xs uppercase tracking-wide text-ink-faint">
             <tr>

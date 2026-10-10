@@ -22,8 +22,8 @@ export default function AuthLayout({
         </Link>
 
         <div>
-          <p className="mb-6 font-mono text-xs uppercase tracking-widest text-teal-light">
-            chr17:43,044,295 &middot; BRCA1
+          <p className="mb-6 border-l-2 border-teal-light pl-3 font-mono text-xs text-teal-light">
+            chr17:43,044,295 &nbsp;/&nbsp; BRCA1
           </p>
           <MutationTrack highlightIndex={9} className="opacity-90" />
           <p className="mt-8 max-w-sm text-sm leading-relaxed text-white/70">

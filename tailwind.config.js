@@ -8,30 +8,35 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // Primary clinical blue — desaturated, restrained, reads as
+        // instrument/system-of-record rather than consumer-startup teal.
         navy: {
-          DEFAULT: "#0F4C81",
-          dark: "#0B1F33",
-          light: "#3D6E9E",
+          DEFAULT: "#1D4E6B",
+          dark: "#0B1220",
+          light: "#3E6E86",
         },
+        // Muted steel-teal, used sparingly for interactive accents only.
         teal: {
-          DEFAULT: "#00A8A8",
-          dark: "#00807F",
-          light: "#5FC9C9",
+          DEFAULT: "#2B6E7E",
+          dark: "#1F5560",
+          light: "#6B98A4",
         },
         surface: {
           DEFAULT: "#FFFFFF",
-          muted: "#F4F6F8",
-          border: "#E2E8ED",
+          muted: "#F3F6F7",
+          border: "#D8DEE3",
         },
+        // Semantic signal colors — deliberately muted/serious, not
+        // bright dashboard red/amber/green.
         accent: {
-          green: "#16A34A",
-          amber: "#D97706",
-          red: "#DC2626",
+          green: "#1E7A46",
+          amber: "#A8631A",
+          red: "#B3261E",
         },
         ink: {
-          DEFAULT: "#0B1F33",
-          secondary: "#5B6B79",
-          faint: "#8B99A6",
+          DEFAULT: "#0B1220",
+          secondary: "#4A5B6B",
+          faint: "#7C8894",
         },
       },
       fontFamily: {

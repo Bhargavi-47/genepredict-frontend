@@ -64,7 +64,7 @@ export default function HistoryPage() {
         </select>
       </div>
 
-      <div className="mt-6 overflow-hidden rounded-xl border border-surface-border bg-surface">
+      <div className="mt-6 overflow-hidden rounded-md border border-surface-border bg-surface">
         <table className="w-full text-left text-sm">
           <thead className="border-b border-surface-border bg-surface-muted text-xs uppercase tracking-wide text-ink-faint">
             <tr>
